@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:background="@color/white"
+    tools:context=".SearchUsers.ShowUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_picture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_profile"
+                app:civ_border_color="@color/teal_200"
+                app:civ_border_width="3dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:text="username"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="40dp"
+                android:textColor="@color/teal_200"
+                android:layout_below="@id/profile_image"/>
+
+            <TextView
+                android:id="@+id/tv_subs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="Broj pretplatnika: 0"
+                android:textStyle="italic"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/profile_image"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_send"
+                android:src="@drawable/ic_message_blue"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_subscribe"
+                    android:text="Pretplati se"
+                    android:layout_marginRight="25dp"
+                    android:backgroundTint="@color/blue"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_unsubscribe"
+                    android:backgroundTint="@color/teal_200"
+                    android:text="Otkaži pretplatu"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal_200"
+                android:text="Nazad"/>
+
+            <TextView
+                android:id="@+id/tv_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Obavijesti od pretplata i poruka primate na uređaju na kojem ste se zadnji puta prijavili"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/tv_product_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:text="Popis vaših proizvoda:"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/profile_image"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    app:queryHint="Pretraži proizvode"
+                    app:searchIcon="@drawable/ic_search"
+                    android:backgroundTint="@color/blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/holder"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="600dp"
+                    android:id="@+id/product_recycler"
+                    android:layout_below="@id/profile_image"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

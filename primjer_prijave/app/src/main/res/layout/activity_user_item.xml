@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    android:backgroundTint="@color/blue"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/black"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/teal_200"
+            app:civ_border_width="2dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/teal_200"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            android:id="@+id/iv_delete"
+            android:layout_toEndOf="@id/tv_subs"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_subs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broj pretplatnika: 0"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_below="@id/tv_username"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

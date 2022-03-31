@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+       android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/teal_200"
+            app:civ_border_width="3dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="Hauba"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="40dp"
+            android:textColor="@color/teal_200"
+            android:layout_below="@id/profile_image"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:text="email"
+            android:textStyle="italic"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/profile_image"/>
+
+        <TextView
+            android:id="@+id/tv_subs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Broj pretplatnika: 0"
+            android:textStyle="italic"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/profile_image"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_200"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/btn_logout"
+            android:text="ODJAVA"/>
+
+        <TextView
+            android:id="@+id/tv_product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:text="Popis vaših proizvoda:"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profile_image"/>
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            app:queryHint="Pretraži svoje proizvode"
+            app:searchIcon="@drawable/ic_search"
+            android:backgroundTint="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/holder"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:id="@+id/product_recycler"
+            android:layout_below="@id/profile_image"
+            />
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/delete_acc"
+             android:text="Izbriši račun"
+             android:layout_marginTop="50dp"
+             android:layout_marginBottom="50dp"
+             android:backgroundTint="@color/red"
+             android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

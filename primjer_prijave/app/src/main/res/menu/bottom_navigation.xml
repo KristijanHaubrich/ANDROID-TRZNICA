@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Početna"
+        />
+
+    <item
+        android:id="@+id/nav_message"
+        android:icon="@drawable/ic_message"
+        android:title="Poruke"
+        />
+
+    <item
+        android:id="@+id/nav_add_product"
+        android:icon="@drawable/ic_add_product"
+        android:title="Dodaj"
+        />
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search"
+        android:title="Pretraži"
+        />
+
+
+
+</menu>

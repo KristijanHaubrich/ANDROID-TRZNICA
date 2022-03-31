@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.primjer_prijave">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_notify"
+        android:label="Tržnica Cibalia"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Primjer_prijave">
+        <activity android:name=".RegistrationLogin.DeleteActivity"></activity>
+
+
+
+        <activity
+            android:name=".Message.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddProduct.ImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchUsers.ShowUserActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".NotificationMessagingService.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".RegistrationLogin.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistrationLogin.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistrationLogin.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistrationLogin.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

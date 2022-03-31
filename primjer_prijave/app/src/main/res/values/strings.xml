@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tržnica Cibalia</string>
+    <string name="tv_banner">CIBALIA</string>
+    <string name="tv_description_banner">Android tržnica</string>
+    <string name="et_email">E-mail adresa</string>
+    <string name="et_password">Lozinka</string>
+    <string name="btn_login">PRIJAVA</string>
+    <string name="username">Korisničko ime</string>
+    <string name="tv_forgot_pass">Zaboravili ste lozinku?</string>
+    <string name="tv_register">REGISTRACIJA</string>
+    <string name="username_add_product">korisnik</string>
+</resources>

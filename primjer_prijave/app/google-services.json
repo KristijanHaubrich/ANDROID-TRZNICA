@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1075817032990",
+    "firebase_url": "https://primjer1prijava-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "primjer1prijava",
+    "storage_bucket": "primjer1prijava.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075817032990:android:d32e28e96239e4ee09ad0f",
+        "android_client_info": {
+          "package_name": "com.example.primjer_prijave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075817032990-4hpi754j6i3051ceng2ne22d9jki7ifc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.primjer_prijave",
+            "certificate_hash": "ad735f8212a6953742ab2d255326b6287224ab8c"
+          }
+        },
+        {
+          "client_id": "1075817032990-q2eo5km1l71rlqe4paa7j2k70uk8sr85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8N4fnHwUDmG7fDkkfnFpvnmtuHwIJwGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075817032990-q2eo5km1l71rlqe4paa7j2k70uk8sr85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
